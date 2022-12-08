@@ -1,0 +1,58 @@
+/* Приєднуйтесь */
+
+.footer__box {
+    display: flex;
+    align-items: baseline;
+    margin: 0%;
+}
+
+.footer__group {
+    display: inline-block;
+
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+.footer__text {
+    font-family: $base-font;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $primary-white-color;
+}
+
+.footer__network-list {
+    @extend %list;
+
+    display: inline-flex;
+    gap: 10px;
+    margin-top: 20px;
+    border: none;
+}
+
+
+.footer__link {
+    display: flex;
+    border: none;
+    padding: 12px;
+    color: $primary-white-color;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    transition: background-color $transition,
+        color $transition;
+
+    &:hover , &:focus {
+            color: $primary-white-color;
+            background-color: $accent-color;
+    }    
+}
+
+
+
+.footer__network {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}

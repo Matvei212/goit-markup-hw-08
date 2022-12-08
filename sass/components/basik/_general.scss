@@ -1,0 +1,53 @@
+
+
+
+
+.body {
+    color: $title-text-color;
+    background-color: $primary-white-color;
+    font-family: $base-font;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.container {
+
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.logo {
+    color: $black-color;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.1923;
+    padding: 23px 0px;
+    margin-right: 93px;
+}
+
+.logo__piece {
+    color: $accent-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0%;
+}
+
+p {
+    margin: 0%;
+}
+
+

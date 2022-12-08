@@ -1,0 +1,17 @@
+/* Кнопка */
+.button {
+    color: $primary-white-color;
+    background-color: $pasiv-button-color;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    min-width: 216px;
+    border: none;
+    transition: background-color $transition;
+
+&:hover,
+    &:focus{background-color: $active-button-color;}
+
+}
+

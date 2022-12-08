@@ -1,0 +1,86 @@
+.work {
+    @extend %list;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.work__item {
+    width: 370px;
+}
+
+.work__picture {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.work__text-box {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: flex;
+
+    font-family: $base-font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: $primary-white-color;
+    background-color: rgba(33, 150, 243, 0.9);
+    border: none;
+    padding: 63px 24px;
+
+
+    opacity: 1;
+    transform: translateY(102%);
+
+    transition: opacity $transition,
+        transform $transition;
+
+
+}
+
+.work__card {
+    padding: 20px 24px;
+    border-left: 1px solid $color-border-card;
+    border-right: 1px solid $color-border-card;
+    border-bottom: 1px solid $color-border-card;
+}
+
+.work__link {
+    display: inline-block;
+
+    transition: box-shadow $transition;
+
+    &:hover ,&:focus {    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);}
+}
+
+
+.work__link:hover .work__text-box,
+.work__link:focus .work__text-box {
+    opacity: 1;
+    transform: translateY(0px)
+}
+
+.work__title {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+
+    letter-spacing: 0.06em;
+}
+
+.work__text {
+    color: $primary-text-color;
+    font-size: 16px;
+    line-height: 1.875;
+}
+
+.header-portfolio {
+    border-bottom: 1px solid #ececec;
+}
