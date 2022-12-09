@@ -2,17 +2,44 @@
 
 .footer__box {
     display: flex;
-    align-items: baseline;
+    flex-wrap: wrap;
+    // align-items: baseline;
+
     margin: 0%;
+    justify-content: center;
+            @media screen and (min-width:1200px) {
+                 align-items: baseline;
+                }
+}
+
+.footer__box-address{
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and (min-width:1200px) {
+    text-align: start;
+    }
 }
 
 .footer__group {
+   
     display: inline-block;
-
-    align-items: center;
-    justify-content: center;
-    margin-left: 70px;
+    // flex-wrap: wrap;
+    // align-items: center;
+    // justify-content: center;
+    // margin-left: 70px;
+    margin-bottom: 60px;
+    padding: 0 124px;
+        @media screen and (min-width:768px) {
+            padding: 0;
+            margin-left: 165px;
+            margin-bottom: 0px;
+            }
+        @media screen and (min-width:1200px) {
+         margin-left: 70px;
+         }
 }
+
+
 
 .footer__text {
     font-family: $base-font;
@@ -20,6 +47,8 @@
     font-size: 14px;
     line-height: 1.14;
     color: $primary-white-color;
+    text-align: center
+    
 }
 
 .footer__network-list {
