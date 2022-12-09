@@ -4,7 +4,9 @@
     @extend %list;
 
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+
 }
 
 .feature__title {
@@ -35,5 +37,12 @@
 }
 
 .feature__item {
-    flex-basis: calc((100% - 90px) / 4);
+    // flex-basis: calc((100% - 90px) / 4);
+    width: 100%;
+     @media screen and (min-width:768px) {
+     flex-basis: calc((100% - 30px) / 2);
+    }
 }
+// .feature__item:not(:last-child){
+//     margin-bottom: 30px;
+// }

@@ -14,9 +14,19 @@
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
   margin: 0px auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
 }
 
 a {
@@ -48,6 +58,13 @@ h6 {
 
 p {
   margin: 0%;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
 }
 
 /* Навігація */
@@ -445,7 +462,7 @@ p {
 /* Секції */
 .section {
   margin: 0px auto;
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 .section-title {
@@ -463,6 +480,8 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -499,8 +518,13 @@ p {
 }
 
 .feature__item {
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .feature__item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 /* Чим ми займаэмося */
@@ -513,12 +537,6 @@ p {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-}
-
-img {
-  display: block;
-  height: auto;
-  max-width: 100%;
 }
 
 .job__product {
