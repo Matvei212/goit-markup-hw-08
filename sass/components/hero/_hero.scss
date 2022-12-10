@@ -52,26 +52,35 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right,
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
+    background-image: $bg-gradient, 
         url(../image/mobile-header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
+    @include retina {
+        background-image: $bg-gradient,
+                url(../image/mobile-header-2x.jpg);
+        }
+
 @media screen and (min-width:480px) {
-    background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
+    background-image: $bg-gradient,
             url(../image/tablet-header.jpg);
+
+            @include retina {
+                    background-image: $bg-gradient,
+                        url(../image/tablet-header-2x.jpg);
+                }
     }
 @media screen and (min-width:768px) {
-    background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
+    background-image: $bg-gradient,
             url(../image/hero-border.jpg);
     }
+
+           @include retina {
+            background-image: $bg-gradient,
+                url(../image/hero-2x.jpg);
+        }
 
 
 }
