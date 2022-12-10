@@ -148,7 +148,17 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="comand__list ">
             <li class="comand__item">
-              <img src="./image/img(5).jpg" alt="employee" width="270" />
+
+            <picture>
+              <source srcset="./image/img(5).jpg 1x, ./image/img(5)-2x.jpg 2x" media="(min-width: 1200px)"/>
+              <source srcset="./image/comand/tab-img(5).jpg 1x, ./image/comand/tab-img(5)-2x.jpg 2x" media="(min-width: 7680px)"/>
+              <source srcset="./image/comand/mobile-comand5.jpg 1x, ./image/comand/mobile-comand5-2x.jpg 2x media="(min-width: 4800px)"/>
+              <img  src="./image/img(5).jpg" alt="employee" width="450"/>
+
+
+            </picture>
+
+              
               <div class="comand__card">
                 <h3 class="comand__name">Ігор Дем'яненко</h3>
                 <p class="comand__text">Product Designer</p>
@@ -172,7 +182,16 @@
               </div>
             </li>
             <li class="comand__item">
-              <img src="./image/img(1).jpg" alt="employee" width="270" />
+
+            <picture>
+              <source srcset="./image/img(1).jpg 1x, ./image/img(1)-2x.jpg 2x" media="(min-width: 1200px)"/>
+              <source srcset="./image/comand/tab-img(1).jpg 1x, ./image/comand/tab-img(1)-2x.jpg 2x" media="(min-width: 7680px)"/>
+              <source srcset="./image/comand/mobile-comand1.jpg 1x, ./image/comand/mobile-comand1-2x.jpg 2x media="(min-width: 4800px)"/>
+              <img  src="./image/img(1).jpg" alt="employee" width="450px" />
+
+
+            </picture>
+
               <div class="comand__card">
                 <h3 class="comand__name">Ольга Рєпіна</h3>
                 <p class="comand__text">Frontend Developer</p>
@@ -197,6 +216,12 @@
               </div>
             </li>
             <li class="comand__item">
+
+
+
+
+
+              
               <img src="./image/img(4).jpg" alt="employee" width="270" />
               <div class="comand__card">
                 <h3 class="comand__name">Микола Тарасов</h3>
