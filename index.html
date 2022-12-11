@@ -127,15 +127,34 @@
           <h2 class="job__title section-title">Чим ми займаємося</h2>
           <ul class="job__works ">
             <li>
-              <div class="job__product"><img src="./image/img2.jpg" alt="html" width="370" />
+              <div class="job__product">
+                <picture>
+                  <source srcset="./image/img2.jpg 1x, ./image/img2-2x.jpg 2x" />
+                <img src="./image/img2.jpg" alt="design" width="370" />
+                </picture>
+                
+                
+                
               <p class="job__text">Десктопні додатки</p></div>
             </li>
             <li>
-              <div class="job__product"><img src="./image/img1.jpg" alt="css" width="370" />
+              <div class="job__product">
+                <picture>
+                  <source srcset="./image/img1.jpg 1x, ./image/img1-2x.jpg 2x" />
+                <img src="./image/img1.jpg" alt="design" width="370" />
+                </picture>
+                
+                
               <p class="job__text">Мобільні додатки</p></div>
             </li>
             <li>
-              <div class="job__product"><img src="./image/img3.jpg" alt="design" width="370" />
+              <div class="job__product">
+                <picture>
+                  <source srcset="./image/img3.jpg 1x, ./image/img3-2x.jpg 2x" />
+                <img src="./image/img3.jpg" alt="design" width="370" />
+                </picture>
+                
+                
               <p class="job__text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -151,8 +170,8 @@
 
             <picture>
               <source srcset="./image/img(5).jpg 1x, ./image/img(5)-2x.jpg 2x" media="(min-width: 1200px)"/>
-              <source srcset="./image/comand/tab-img(5).jpg 1x, ./image/comand/tab-img(5)-2x.jpg 2x" media="(min-width: 7680px)"/>
-              <source srcset="./image/comand/mobile-comand5.jpg 1x, ./image/comand/mobile-comand5-2x.jpg 2x media="(min-width: 4800px)"/>
+              <source srcset="./image/comand/tab-img(5).jpg 1x, ./image/comand/tab-img(5)-2x.jpg 2x" media="(min-width: 768px)"/>
+              <source srcset="./image/comand/mobile-comand5.jpg 1x, ./image/comand/mobile-comand5-2x.jpg 2x" media="(min-width:480px)"/>
               <img  src="./image/img(5).jpg" alt="employee" width="450"/>
 
 
@@ -185,8 +204,8 @@
 
             <picture>
               <source srcset="./image/img(1).jpg 1x, ./image/img(1)-2x.jpg 2x" media="(min-width: 1200px)"/>
-              <source srcset="./image/comand/tab-img(1).jpg 1x, ./image/comand/tab-img(1)-2x.jpg 2x" media="(min-width: 7680px)"/>
-              <source srcset="./image/comand/mobile-comand1.jpg 1x, ./image/comand/mobile-comand1-2x.jpg 2x media="(min-width: 4800px)"/>
+              <source srcset="./image/comand/tab-img(1).jpg 1x, ./image/comand/tab-img(1)-2x.jpg 2x" media="(min-width: 768px)"/>
+              <source srcset="./image/comand/mobile-comand1.jpg 1x, ./image/comand/mobile-comand1-2x.jpg 2x " media="(min-width:480px)"/>
               <img  src="./image/img(1).jpg" alt="employee" width="450px" />
 
 
@@ -216,13 +235,16 @@
               </div>
             </li>
             <li class="comand__item">
+            <picture>
+              <source srcset="./image/img(4).jpg 1x, ./image/img(4)-2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./image/comand/tab-img(4).jpg 1x, ./image/comand/tab-img(4)-2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./image/comand/mobile-comand4.jpg 1x, ./image/comand/mobile-comand4-2x.jpg 2x" media="(min-width:480px)" />
+              <img src="./image/img(4).jpg" alt="employee" width="450px" />
+            
+            
+            </picture>
 
 
-
-
-
-              
-              <img src="./image/img(4).jpg" alt="employee" width="270" />
               <div class="comand__card">
                 <h3 class="comand__name">Микола Тарасов</h3>
                 <p class="comand__text">Marketing</p>
@@ -246,7 +268,15 @@
               </div>
             </li>
             <li class="comand__item">
-              <img src="./image/img.jpg" alt="employee" width="270" />
+            <picture>
+              <source srcset="./image/img.jpg 1x, ./image/img-2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./image/comand/tab-img.jpg 1x, ./image/comand/tab-img-2x.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./image/comand/mobile-comand.jpg 1x, ./image/comand/mobile-comand-2x.jpg 2x" media="(min-width:480px)" />
+              <img src="./image/img.jpg" alt="employee" width="450px" />
+            
+            
+            </picture>
+
               <div class="comand__card">
                 <h3 class="comand__name">Михайло Єрмаков</h3>
                 <p class="comand__text">UI Designer</p>
