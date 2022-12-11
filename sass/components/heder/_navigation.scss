@@ -3,19 +3,23 @@
 .top-line {
     display: flex;
     align-items: center;
-
+    justify-content: space-between;
 }
 
 .nav {
     display: flex;
+    
     align-items: center;
 }
 
 .site-nav {
     @extend %list;
-
-    display: flex;
+display: none;
+    // display: flex;
     gap: 50px;
+    @media screen and (min-width:768px) {
+            display: flex;
+        }
 }
 
 .site-nav__link {

@@ -1,0 +1,19 @@
+    
+        .header__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border: none;
+    @media screen and (min-width:768px) {
+            display:none;
+        }
+
+        }
+    
+        // .header__icon-menu {
+        //     fill: #212121;
+        // }
