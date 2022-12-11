@@ -63,24 +63,19 @@
                 url(../image/mobile-header-2x.jpg);
         }
 
-@media screen and (min-width:480px) {
-    background-image: $bg-gradient,
+ @media screen and (min-width:480px) {
+    background-image: $bg-gradient ,
             url(../image/tablet-header.jpg);
-
             @include retina {
                     background-image: $bg-gradient,
                         url(../image/tablet-header-2x.jpg);
                 }
     }
-@media screen and (min-width:768px) {
-    background-image: $bg-gradient,
+  @media screen and (min-width:768px) {
+    background-image: $bg-gradient ,
             url(../image/hero-border.jpg);
-    }
-
-           @include retina {
-            background-image: $bg-gradient,
-                url(../image/hero-2x.jpg);
+            @include retina {
+                   background-image: $bg-gradient,
+                        url(../image/hero-border-2x.jpg);
         }
-
-
-}
+}}
