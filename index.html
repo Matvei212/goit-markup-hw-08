@@ -54,14 +54,14 @@
               +38 096 111 11 11</a>
           </li>
         </ul>
-        <button type="button" class="header__menu-open"> <svg class="header__icon-menu"><use href="./image/symbol-defs.svg#icon-menu_40px"></use>></svg> </button>
+        <button type="button" class="header__menu-open" data-menu-open> <svg class="header__icon-menu"><use href="./image/symbol-defs.svg#icon-menu_40px"></use>></svg> </button>
       </div>
 
       
-        <div class="mob-menu">
+        <div class="mob-menu is-hidden" data-menu>
           <div class="mob-container">
           <div class="mob-menu__top">
-            <button type="button" class="menu-close"> <svg class="menu-close-icon">
+            <button type="button" class="menu-close" data-menu-close> <svg class="menu-close-icon">
                 <use href="./image/symbol-defs.svg#icon-close_40px"></use>>
               </svg> </button>
     
@@ -505,6 +505,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 
   </body>
 </html>

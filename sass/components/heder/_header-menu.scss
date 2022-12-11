@@ -17,7 +17,12 @@
 //             display: none;
 //         }
 // }
+.mob-menu.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: visible;
 
+}
 .mob-menu {
   position: fixed;
   top: 0;
@@ -25,6 +30,8 @@
   width: 100vw;
   height: 100vh;
   background-color: $primary-white-color;
+transition: opacity $transition,
+        visibility $transition;
 
   padding: 10px 15px 48px 40px;
    >.mob-container {
@@ -46,7 +53,11 @@
   height: 40px;
   border: none;
   background-color: $primary-white-color;
+
+  
 }
+
+
 
 .menu-close-icon {
   width: 40px;
