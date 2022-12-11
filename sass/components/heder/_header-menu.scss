@@ -56,7 +56,12 @@ transition: opacity $transition,
 
   
 }
+.menu-close:hover,
+.menu-close:focus {
+    fill: $active-button-color;
 
+    cursor: pointer;
+}
 
 
 .menu-close-icon {
