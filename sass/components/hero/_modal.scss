@@ -22,8 +22,8 @@
 
 .modal {
     position: absolute;
-    min-width: 528px;
-    min-height: 581px;
+    min-width: 450px;
+    min-height: 609px;
     padding: 40px;
 
     top: 50%;
@@ -37,6 +37,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width:1200px) {
+            min-width: 240px;
+            padding: 10px 32px;
+        }
 }
 
 .modal__button {

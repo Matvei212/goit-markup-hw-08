@@ -25,7 +25,7 @@
 
 .footer__input-mail {
     width: 100%;
-    min-width: 450px;
+    min-width: 300px;
     height: 50px;
     margin: 20px 0;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -43,6 +43,11 @@
             border-color: $accent-color;
                 outline: none;
     }
+        @media screen and (min-width:480px) {
+            min-width: 450px;
+    
+        }
+
 
      @media screen and (min-width:1200px) {
         width: 100%;
