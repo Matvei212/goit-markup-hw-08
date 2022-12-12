@@ -8,6 +8,14 @@
 }
 .hero__container{
     padding: 118px 60px;
+
+    @media screen and (min-width:768px) {
+        padding: 118px 0px;
+        }
+
+    @media screen and (min-width:1200px) {
+            padding: 200px 0px;
+        }
 }
 
 .hero__title {
@@ -48,8 +56,8 @@
 }
 
 .bg-hero {
-    height: 400px;
-    max-width: 1600px;
+    
+    // max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
     background-image: $bg-gradient, 
@@ -64,6 +72,7 @@
         }
 
  @media screen and (min-width:480px) {
+    height: 400px;
     background-image: $bg-gradient ,
             url(../image/tablet-header.jpg);
             @include retina {
@@ -78,4 +87,8 @@
                    background-image: $bg-gradient,
                         url(../image/hero-border-2x.jpg);
         }
-}}
+            }
+                        @media screen and (min-width:1200px) {
+                           height: 600px;
+                        }
+}
