@@ -325,6 +325,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 20px;
   margin-top: 64px;
 }
@@ -353,11 +355,6 @@ img {
 .hero__container {
   padding: 118px 60px;
 }
-@media screen and (min-width: 768px) {
-  .hero__container {
-    padding: 118px 0px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .hero__container {
     padding: 200px 0px;
@@ -376,6 +373,11 @@ img {
   text-align: center;
   font-size: 26px;
   line-height: 1.6153846154;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -614,6 +616,7 @@ img {
 .modal__input:focus {
   border-color: #2196f3;
   outline: none;
+  fill: #2196f3;
 }
 
 .modal__label {
@@ -1135,7 +1138,11 @@ img {
 .footer__group {
   display: inline-block;
   margin-bottom: 60px;
-  padding: 0 124px;
+}
+@media screen and (min-width: 480px) {
+  .footer__group {
+    padding: 0 124px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer__group {

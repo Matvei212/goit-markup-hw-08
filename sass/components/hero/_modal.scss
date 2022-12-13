@@ -143,6 +143,7 @@
 .modal__input:focus {
     border-color: $accent-color;
     outline: none;
+    fill: $accent-color;
 }
 
 .modal__label {

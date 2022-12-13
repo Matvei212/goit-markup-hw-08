@@ -9,12 +9,11 @@
 .hero__container{
     padding: 118px 60px;
 
-    @media screen and (min-width:768px) {
-        padding: 118px 0px;
-        }
+    
 
     @media screen and (min-width:1200px) {
             padding: 200px 0px;
+            
         }
 }
 
@@ -34,6 +33,11 @@
 
     font-size: 26px;
     line-height: calc(42px/26px);
+@media screen and (min-width:768px) {
+
+        width: 360px;
+    }
+    
 
     @media screen and (min-width:1200px) {
             font-size: 44px;
@@ -65,6 +69,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
 
     @include retina {
         background-image: $bg-gradient,
